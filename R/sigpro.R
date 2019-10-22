@@ -46,6 +46,6 @@ sigProfilerExtractor <- function(input_type, output, input, refgen = 'GRCh37', g
 #' @examples
 importdata <- function(datatype){
   sigpro <- reticulate::import("sigproextractor.sigpro")
-  project = sigpro$importdata("vcf")
+  project = sigpro$importdata(datatype)
   return(project)
 }
