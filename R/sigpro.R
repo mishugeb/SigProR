@@ -88,3 +88,23 @@ decomposition <- function(signatures, activities, samples, output, mutation_type
   result = decomposition$decompose(signatures, activities, samples, output, mutation_type="96", genome_build="GRCh37", verbose=False)
   return(result)
 }
+
+#' Title
+#'
+#' @param genome
+#' @param custom
+#' @param rsync
+#' @param bash
+#' @param ftp
+#'
+#' @return
+#' @export install
+#'
+#' @examples
+install <- function(genome, custom=F, rsync=F, bash=T, ftp=T){
+  os <- reticulate::import("os")
+  sys <- reticulate::import("sys")
+  genInstall <- reticulate::import("SigProfilerMatrixGenerator.install")
+  genInstall$install(genome, custom, rsync, bash, ftp)
+  sys$stdout$flush()
+}

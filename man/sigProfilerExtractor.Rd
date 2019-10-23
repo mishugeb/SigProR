@@ -2,7 +2,7 @@
 % Please edit documentation in R/sigpro.R
 \name{sigprofilerextractor}
 \alias{sigprofilerextractor}
-\title{sigprofilerextractor Function}
+\title{sigprofilerextractor}
 \usage{
 sigprofilerextractor(input_type, output, inputdata, refgen = "GRCh37",
   genome_build = "GRCh37", minsigs = 1, maxsigs = 3,
@@ -42,5 +42,5 @@ where "96" is the SBS96 context, "DINUC" is the DINULEOTIDE context and ID is IN
 a folder with results
 }
 \description{
-sigprofilerextractor Function
+Extracts De Novo signature from genomes and Decomposes the De Novo Signatures to Cosmic Signatures
 }
