@@ -5,9 +5,9 @@ An R wrapper for running the SigProfilerExtractor framework.
 
 **INTRODUCTION**
 
-The purpose of this document is to provide a guide for using the SigProfilerMatrixGenerator framework to generate mutational matrices for a set of samples with associated mutational catalogues. An extensive Wiki page detailing the usage of this tool can be found at https://osf.io/t6j7u/wiki/home/. 
+The purpose of this document is to provide a guide for using the SigProfilerExtractor framework to extract the De Novo mutational signatures from a set of samples and decompose the De Novo signatures into the COSMIC signatures. An extensive Wiki page detailing the usage of this tool can be found at https://osf.io/t6j7u/wiki/home/. 
 
-For users that prefer working in a Python environment, the tool is written in Python and can be found and installed from: https://github.com/AlexandrovLab/SigProfilerExtractorR
+For users that prefer working in a Python environment, the tool is written in Python and can be found and installed from: https://github.com/AlexandrovLab/SigProfilerExtractor
 
 **PREREQUISITES**
 
