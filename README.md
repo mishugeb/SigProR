@@ -73,12 +73,19 @@ Example:
 ```
 >> library("SigProfilerExtractorR")
 >> path_to_example_data <- importdata("table")
->> data <- path_to_example_data 
+>> data <- path_to_example_data # here you can provide the path of your own data
 >> sigprofilerextractor("table", "example_output", data, minsigs=1, maxsigs=3, replicates=10, cpu=-1)
 ```
 
 The example file will generated in the working directory
 
+
+**Decomposition of signature**
+SigProfilerExtractorR offer a separate function, decomposition, that decomposes a tab delimited file containing a set of De Novo signatures to the COSMIC signatures and attribute them to a given set of sample.
+```
+help(decomposition)
+```
+This will show the details about the decomposition function.
 ## COPYRIGHT
 This software and its documentation are copyright 2018 as a part of the sigProfiler project. The SigProfilerExtractor framework is free software and is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
