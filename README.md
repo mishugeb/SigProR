@@ -60,3 +60,22 @@ This will install the human 37 assembly as a reference genome.
 **SUPPORTED GENOMES**
 
 Information about supported will be found at https://github.com/AlexandrovLab/SigProfilerMatrixGeneratorR
+
+**Extraction Signatures**
+
+Signatures can be extracted from vcf files or tab delimited mutational table using the sigprofilerextractor function.
+```
+>> help(sigprofilerextractor)
+```
+This will show the details about the sigprofilerextractor funtion.
+
+Example:
+```
+>> library("SigProfilerExtractorR")
+>> path_to_example_data <- importdata("table")
+>> data <- path_to_example_data 
+>> sigprofilerextractor("table", "example_output", data, minsigs=1, maxsigs=3, replicates=10, cpu=-1)
+```
+
+The example file will generated in the working directory
+ 
